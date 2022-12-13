@@ -25,7 +25,7 @@ const asyncHandler = (cb) => {
 router.get('/users', authenticateUser, asyncHandler(async (req, res) => {
   const user = await req.currentUser;
   if(user) {
-    res.json({user});
+    res.json(user);
   } else {
     res.status(401).json('Access Denied')
   }

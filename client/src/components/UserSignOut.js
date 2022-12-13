@@ -1,9 +1,17 @@
-import React from 'react'
+import { useEffect } from 'react';
+import { Redirect } from 'react-router-dom';
 
-const UserSignOut = () => {
+const UserSignOut = ({context}) => {
+
+  useEffect(() => {
+    context.actions.signOut();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+  
+
   return (
-    <div>UserSignOut</div>
-  )
+    <Redirect to="/" />
+  );
 }
 
-export default UserSignOut
+export default UserSignOut;
