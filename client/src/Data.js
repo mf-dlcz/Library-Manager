@@ -73,4 +73,6 @@ export default class Data {
     }
   }
 
+  async createCourse(id)
+
 }
