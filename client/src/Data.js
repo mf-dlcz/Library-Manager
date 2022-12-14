@@ -56,5 +56,21 @@ export default class Data {
     }
   }
 
+  async getCourse(id) {
+    const response = await this.api(`/courses/${id}`, 'GET');
+    if (response.status === 200) {
+      return response.json().then(data => data);
+    } else {
+      throw new Error();
+    }
+  }
+  async deleteCourse(id, username, password) {
+    const response = await this.api(`/courses/${id}`, 'DELETE', null, true, {username, password});
+    if (response.status === 204) {
+      return
+    } else {
+      throw new Error();
+    }
+  }
 
 }
