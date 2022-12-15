@@ -1,6 +1,11 @@
 import { useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 
+/**
+ * Renders a form that allows the a user to sign up by creating a new account
+ * Renders a Sign Up button that sends a POST Request to the Rest API 
+ */
+
 const UserSignUp = ({context}) => {
   const [errors, setErrors] = useState([]);
   const [user, setUser] = useState({

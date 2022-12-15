@@ -1,6 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+/**
+ * Displays the top menu bar and has two buttons to singin
+ * and sign up.
+ */
+
 export default class Header extends React.PureComponent {
   render() {
     const { context } = this.props;

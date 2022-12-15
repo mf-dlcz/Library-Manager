@@ -2,7 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { Link, useParams, useHistory } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 
+/**
+ * Retrieves the details for a course from the
+ * Rest API's route and renders the course 
+ */
 const CourseDetail = ({context}) => {
+  //React Hook
   const [course, setCourse] = useState([]);
 
   const { id } = useParams();
@@ -13,7 +18,6 @@ const CourseDetail = ({context}) => {
     context.data.getCourse(id)
     .then(data => setCourse(data))
     .catch(err => console.log(err));
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const handleDelete = async() => {

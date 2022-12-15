@@ -2,6 +2,10 @@ import React from 'react';
 import { Route, Redirect } from 'react-router-dom';
 import { Consumer } from '../Context';
 
+/**
+ * Authenticates the user and redirects user to the singin page
+ */
+
 const PrivateRoute = ({ component: Component, ...rest }) => {
   return (
     <Consumer>
