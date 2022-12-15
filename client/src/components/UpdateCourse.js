@@ -24,6 +24,7 @@ const UpdateCourse = ({context}) => {
       // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
+    //Updates a course and checks for errors
   const handleSubmit = e => {
     e.preventDefault();
     context.data.updateCourse(course, emailAddress, password)

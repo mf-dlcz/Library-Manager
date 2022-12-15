@@ -4,11 +4,11 @@ import { Link, useHistory } from 'react-router-dom';
 /**
  * Renders a form that allows a user to create a new course 
  */
-
 const CreateCourse = ({ context }) => {
   const history = useHistory();
   const { id, firstName, lastName, emailAddress, password } = context.authenticatedUser; 
   
+  //Hooks
   const [errors, setErrors] = useState([]);
   const [course, setCourse] = useState({
     title: '',
@@ -26,6 +26,7 @@ const CreateCourse = ({ context }) => {
     }));
   };
 
+  //Creates a new course and checks for errors
   const handleSubmit = e => {
     e.preventDefault();
     context.data.createCourse(course, emailAddress, password)

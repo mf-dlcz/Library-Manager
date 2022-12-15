@@ -5,7 +5,6 @@ import { Link, useHistory } from 'react-router-dom';
  * Renders a form that allows a user to sign in using their existing account
  * information.
  */
-
 const UserSignIn = ({context}) => {
   const emailAddress = useRef(null);
   const password = useRef(null);

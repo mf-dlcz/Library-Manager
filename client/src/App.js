@@ -5,6 +5,10 @@ import {
   Switch
 } from 'react-router-dom';
 
+/**
+ * Imports all of my components and their routes
+ */
+
 import Header from './components/Header';
 import Courses from './components/Courses';
 import CreateCourse from './components/CreateCourse';
