@@ -17,7 +17,7 @@ app.use(cors());
 // setup a friendly greeting for the root route
 app.get('/', (req, res) => {
   res.json({
-    message: 'Welcome to the REST API project!',
+    message: 'Welcome to Library Management!',
   });
 });
 app.use('/api', routes);
