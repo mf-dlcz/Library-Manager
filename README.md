@@ -38,7 +38,7 @@ The project utilizes the following technologies and features:
 First, you'll need to clone this repository to your local machine. Open your terminal and run the following command:
 
 ```git
-git clone https://github.com/mf-dlcz/full-stack-app-with-react.git
+git clone https://github.com/mf-dlcz/Library-Manager.git
 ```
 
 2. **Navigate to the Project Folder**:
